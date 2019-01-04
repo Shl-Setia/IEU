@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "605679829635",
+    "firebase_url": "https://va-ieu-a7b54.firebaseio.com",
+    "project_id": "va-ieu-a7b54",
+    "storage_bucket": "va-ieu-a7b54.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605679829635:android:fa46d5c76e8288fe",
+        "android_client_info": {
+          "package_name": "com.viennaadvantage.ieu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605679829635-4pojc2akknp01co7jmeh0640e29u7uc0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBv2FsiUExd3bGkaIf5eYhg_qnycViOanw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

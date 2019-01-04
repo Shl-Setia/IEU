@@ -1,0 +1,22 @@
+{
+  "name": "IEU",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  },
+  "proxies": [
+    {
+      "path": "/api/Values/Login",
+      "proxyUrl": "http://ieu.viennaadvantage.com/api/Values/Login"
+    },
+    {
+      "path": "/api/Values/InitSession",
+      "proxyUrl": "http://ieu.viennaadvantage.com/api/Values/InitSession"
+    },
+    {
+      "path": "/api/Values/GetRecord",
+      "proxyUrl": "http://ieu.viennaadvantage.com/api/Values/GetRecord"
+    }
+  ]
+}

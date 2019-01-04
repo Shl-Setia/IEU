@@ -1,0 +1,34 @@
+page-alert {
+    .alert-list{
+        background:color($colors, primary);
+        border-top :none !important;
+        border-bottom: 1px solid color($colors, icon-off) !important;
+        //color: color($colors, secondary)      
+     }
+     ion-label{
+        color: color($colors, secondary) !important;
+        white-space : normal;
+        margin-bottom: 6px !important;
+     }
+     ion-item{
+        padding-left: 0% !important;
+     }
+     ion-item-divider{
+        padding-left: 0% !important; 
+     }
+     .alert-icon{
+         width: 0.5em !important;
+         height: 0.5em !important;
+         min-width: 0.5em !important;
+     }
+     .item-inner{
+         margin-left: 2px !important;
+         border-bottom: none !important;
+     }
+
+     .toolbar {
+        @include rtl() {
+          direction: ltr;
+        }
+      }
+}

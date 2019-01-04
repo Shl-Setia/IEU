@@ -1,0 +1,53 @@
+page-register {
+    .item-md {
+        border-bottom: none !important;
+        padding-left: 0px;
+    }
+    .item-md.item-block .item-inner {
+        border-bottom: none !important;
+      }
+    .register-label{
+        color: color($colors, secondary);
+        background-color: color($colors, primary);
+    }  
+    .register-input{
+         color: color($colors, icon-off);
+     }
+
+    .register-button{
+        margin-top: 20px;
+    } 
+
+    ion-select {
+        max-width: 100% !important;
+    }
+    .select-md .select-icon {
+        margin-left: 10px;
+    }
+    .select-md .select-placeholder {
+        color: color($colors, icon-off);
+    }
+    text-input::-moz-placeholder {
+        color: color($colors, icon-off);
+    }
+      
+    .text-input:-ms-input-placeholder {
+        color: color($colors, icon-off);
+    }
+      
+    .text-input::-webkit-input-placeholder {
+        color: color($colors, icon-off);
+    }
+
+    .text-input{
+        @include rtl() {
+          direction: rtl;
+        }
+    }
+    
+    .toolbar {
+        @include rtl() {
+          direction: ltr;
+        }
+      }
+}

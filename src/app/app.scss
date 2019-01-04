@@ -1,0 +1,85 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.bg-style {
+        background-color:color($colors, primary);
+}
+
+.no-scroll {
+        overflow: hidden;
+}
+
+a {
+        color: color($colors, secondary);
+}
+
+ion-icon {
+        &[class*="ieu-"] {
+            // Instead of using the font-based icons
+            // We're applying SVG masks
+            mask-size: contain;
+            mask-position: 50% 50%;
+            mask-repeat: no-repeat;
+            background: currentColor;
+            width: 1em;
+            height: 1em;
+        }
+        // custom icons
+        &[class*="ieu-login-on"] {
+            mask-image: url(../assets/imgs/login-on.svg);
+        }
+        &[class*="ieu-login"] {
+                mask-image: url(../assets/imgs/login.svg);
+        }
+        &[class*="ieu-alert-on"] {
+                mask-image: url(../assets/imgs/alert-on.svg);
+        }
+        &[class*="ieu-alert"] {
+                mask-image: url(../assets/imgs/alert.svg);
+        }
+        &[class*="ieu-notification-on"] {
+                mask-image: url(../assets/imgs/notification-on.svg);
+        }
+        &[class*="ieu-notification"] {
+                mask-image: url(../assets/imgs/notification.svg);
+        }
+        &[class*="ieu-register-on"] {
+                mask-image: url(../assets/imgs/register-on.svg);
+        }
+        &[class*="ieu-register"] {
+                mask-image: url(../assets/imgs/register.svg);
+        }
+        &[class*="ieu-error"] {
+                mask-image: url(../assets/imgs/error.svg);
+        }
+        &[class*="ieu-success"] {
+                mask-image: url(../assets/imgs/sucess.svg);
+        }
+        &[class*="ieu-warning"] {
+                mask-image: url(../assets/imgs/warning.svg);
+        }
+        &[class*="ieu-password-ico"] {
+                mask-image: url(../assets/imgs/password-ico.svg);
+        }
+        &[class*="ieu-user-ico"] {
+                mask-image: url(../assets/imgs/user-ico.svg);
+        }
+        &[class*="ieu-arrow"] {
+                mask-image: url(../assets/imgs/arrow.svg);
+        }
+            
+
+    }

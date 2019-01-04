@@ -1,0 +1,16 @@
+page-qr-scanner {
+    p{
+        margin-top: 30px;
+        color: color($colors, secondary);
+        padding: 10px !important; 
+      }
+  td{
+    padding: 2px !important;
+  }
+    
+      .toolbar {
+        @include rtl() {
+          direction: ltr;
+        }
+      }  
+}

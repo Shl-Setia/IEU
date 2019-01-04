@@ -1,0 +1,53 @@
+<!--
+  Generated template for the AlertPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-border>
+
+  <ion-toolbar color="secondary">
+
+    <ion-buttons left>
+      <button ion-button icon-only color="icon-off" (click)="logout()">
+        <ion-icon name="log-out"></ion-icon>
+      </button>
+    </ion-buttons>
+    <!-- goToOtherPage($event) -->
+    <!-- <ion-buttons left>
+      <button ion-button icon-only color="icon-off" (click)="goToOtherPage('register')">
+        <ion-icon name="ieu-register"></ion-icon>
+      </button>
+    </ion-buttons> -->
+
+    <!-- <ion-buttons left>
+      <button ion-button icon-only color="icon-off" (click)="goToOtherPage('qr-scanner')">
+        <ion-icon name="qr-scanner"></ion-icon>
+      </button>
+    </ion-buttons> -->
+    <ion-buttons right>
+      <button ion-button icon-only color="primary">
+        <ion-icon name="ieu-alert"></ion-icon>
+      </button>
+    </ion-buttons>
+    </ion-toolbar>
+
+</ion-header>
+
+<!-- arrow -->
+<ion-content class="bg-style no-scroll" style="margin-top:-5px;height:75px;z-index:5">
+    <ion-icon name="ieu-arrow" color="secondary" class="ion-icon-arrow" style="float:right;padding-left:40px" ></ion-icon>
+</ion-content>
+
+<ion-content padding class="bg-style">
+    <ion-item-group *ngFor="let item of items">
+        <ion-item-divider light class="alert-list">
+            <ion-icon name="ieu-warning" item-start color="warning" class="alert-icon"></ion-icon>
+          {{item.title}}
+        </ion-item-divider>
+        <ion-item *ngFor="let status of item.statuses" class="alert-list">
+            <ion-icon name="ieu-success" item-start color="success" class="alert-icon"></ion-icon>
+          {{status}}
+        </ion-item>
+    </ion-item-group>
+</ion-content>

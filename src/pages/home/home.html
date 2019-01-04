@@ -1,0 +1,134 @@
+<ion-header no-border>
+  <!-- <ion-navbar>
+
+    <ion-title>
+      Ionic Blank Sahil Setia
+    </ion-title>
+  </ion-navbar> -->
+
+  <ion-toolbar color="secondary">
+
+    <ion-buttons left>
+      <button ion-button icon-only color="primary">
+        <ion-icon name="ieu-login-on"></ion-icon>
+      </button>
+    </ion-buttons>
+    <!-- goToOtherPage($event) -->
+    <!-- <ion-buttons left>
+      <button ion-button icon-only color="icon-off" (click)="goToOtherPage('register')">
+        <ion-icon name="ieu-register"></ion-icon>
+      </button>
+    </ion-buttons> -->
+
+    <!-- <ion-buttons left>
+      <button ion-button icon-only color="icon-off" (click)="goToOtherPage('qr-scanner')">
+        <ion-icon name="qr-scanner"></ion-icon>
+      </button>
+    </ion-buttons> -->
+
+    <!-- <ion-buttons right>
+      <button ion-button icon-only color="success">
+        <ion-icon name="ieu-success"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-buttons right>
+      <button ion-button icon-only color="warning">
+        <ion-icon name="ieu-warning"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-buttons right>
+      <button ion-button icon-only color="error">
+        <ion-icon name="ieu-error"></ion-icon>
+      </button>
+    </ion-buttons> -->
+
+    <!-- <ion-buttons right>
+      <button ion-button icon-only color="icon-off" (click)="goToOtherPage('alert')">
+        <ion-icon name="ieu-alert"></ion-icon>
+      </button>
+    </ion-buttons>
+
+    <ion-buttons right>
+      <button ion-button icon-only color="icon-off" (click)="goToOtherPage('notification')">
+        <ion-icon name="ieu-notification"></ion-icon>
+      </button>
+    </ion-buttons> -->
+
+    </ion-toolbar>
+
+</ion-header> 
+
+<!-- arrow -->
+<ion-content class="bg-style no-scroll" style="margin-top:-5px;height:75px;z-index:5">
+    <ion-icon name="ieu-arrow" color="secondary"  style="float:left;padding-right:35px" ></ion-icon>
+</ion-content>
+
+<!-- body -->
+<ion-content  padding="true" class="bg-style" >
+
+
+  <img src="assets/imgs/logo.png" alt="Logo" style="width:130px;height:130px;display:block;margin:auto;"/>
+
+
+  <form [formGroup]="loginForm" (ngSubmit)="login()">
+    <ion-item class="login-form" >
+      <ion-label><ion-icon name="ieu-user-ico" item-left color="secondary"></ion-icon></ion-label>
+       <ion-input  type="text" placeholder="{{ 'USERNAME' | translate }}" formControlName="username"></ion-input>
+    </ion-item>
+    <ion-item class="login-form">
+      <ion-label><ion-icon name="ieu-password-ico" item-left color="secondary"></ion-icon></ion-label>
+      <ion-input type="password" placeholder="{{ 'PASSWORD' | translate }}" formControlName="password"></ion-input>
+    </ion-item>
+    <p></p>
+    <ion-item class="login-form">
+      <ion-label color="secondary">{{ 'TYPE' | translate }}</ion-label>
+      <ion-select formControlName="type">
+        <ion-option value="Student">{{ 'STUDENT' | translate }}</ion-option>
+        <ion-option value="Member">{{ 'MEMBER' | translate }}</ion-option>
+        <ion-option value="Employee">{{ 'EMPLOYEE' | translate }}</ion-option>
+        <ion-option value="Organization">{{ 'ORGANIZATION' | translate }}</ion-option>
+      </ion-select>
+    </ion-item>
+    <p></p>
+    <button ion-button block large color="sub-primary" type="submit" [disabled]="!loginForm.valid">{{ 'LOGIN' | translate }}</button>  
+  </form>
+
+    <!-- IdeasIncAdmin/9324597e06472b19ccfc16b0d5c844a8 -->
+ <h4>{{ 'OR' | translate }}</h4>
+
+  <p>
+    <button ion-button  block large color="sub-primary" (click)="scanBarCodeAndLogin()">{{ 'SCANQRCODE' | translate }}</button>
+  </p>
+
+  <!-- <h6>powered by  ASITS</h6> -->
+
+</ion-content> 
+<!-- body  ends-->
+  <!-- <div *ngIf="barCodeResult">
+      {{barCodeResult.text}}
+      {{barCodeResult.type}} 
+    </div> -->
+  
+<!-- <div *ngIf="!loginSuccess">
+  You are not Logged in!!
+</div> -->
+
+
+
+  <!-- <ion-list>
+
+      <ion-item>
+        <ion-label floating>Username</ion-label>
+        <ion-input type="text" value="" #name (keyup.enter)="update1(name.value)"
+                                              (blur)="update1(name.value)"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password" value="" #paswd (keyup.enter)="update2(paswd.value)"
+                                              (blur)="update2(paswd.value)"></ion-input>
+      </ion-item>
+
+  </ion-list> -->

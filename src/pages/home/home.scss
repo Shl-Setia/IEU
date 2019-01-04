@@ -1,0 +1,49 @@
+page-home {
+
+  .login-form {
+         background:color($colors, primary);
+         color: color($colors, secondary);      
+      }
+  h2{
+    color: color($colors, secondary);
+    text-align:center;
+  }
+  h4{
+    color: color($colors, secondary);
+    text-align:center;
+    margin-top: 30px;
+  }
+
+  .item-md.item-block .item-inner {
+    padding-right: 8px !important;
+    border-bottom: 1px solid color($colors, sub-primary) !important;
+  }
+
+  .button-md {
+    text-transform: none !important;
+  }
+
+  p{
+    margin-top: 30px;
+  }
+
+  .text-input{
+    @include rtl() {
+      direction: rtl;
+    }
+  }
+
+  .toolbar {
+    @include rtl() {
+      direction: ltr;
+    }
+  }
+
+  h6{
+    color: color($colors, secondary);
+    text-align:left;
+    margin-top: 10px;
+  }
+
+
+}
