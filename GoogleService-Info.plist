@@ -7,34 +7,34 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>334435271870-mbhaqnefo44gmt9md2vmo6ajae89h9hd.apps.googleusercontent.com</string>
+	<string>605679829635-gpch3p79s1erkkkk5a0omu3pmoh60c9i.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.334435271870-mbhaqnefo44gmt9md2vmo6ajae89h9hd</string>
+	<string>com.googleusercontent.apps.605679829635-gpch3p79s1erkkkk5a0omu3pmoh60c9i</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBWQhmr3pHnCmwvbi6k7Jjr0icJBmD0cKk</string>
+	<string>AIzaSyBoJ9bdR_R6YdXAfSt-3Qrb55MGJJZ5GRA</string>
 	<key>GCM_SENDER_ID</key>
-	<string>334435271870</string>
+	<string>605679829635</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.vienna.www.ieu</string>
+	<string>com.viennaadvantage.ieu</string>
 	<key>PROJECT_ID</key>
-	<string>va-ieu</string>
+	<string>va-ieu-a7b54</string>
 	<key>STORAGE_BUCKET</key>
-	<string>va-ieu.appspot.com</string>
+	<string>va-ieu-a7b54.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
 	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<false></false>
 	<key>IS_GCM_ENABLED</key>
 	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:334435271870:ios:1e2f0bcc7e9415e9</string>
+	<string>1:605679829635:ios:fa46d5c76e8288fe</string>
 	<key>DATABASE_URL</key>
-	<string>https://va-ieu.firebaseio.com</string>
+	<string>https://va-ieu-a7b54.firebaseio.com</string>
 </dict>
 </plist>
